@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url("background2.jpeg");
+    margin: 0;
+    padding: 0;
+}
+/*linear-gradient(120deg, #fff1eb 0%, #ace0f9 100%)*/
+
+.questionnaire-layout {
+    width: 100%;
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center content horizontally */
+    gap: 20px; /* Space between the images and the form */
+    padding: 20px;
+}
+
+.form-image-top-right {
+    position: absolute; /* Position relative to the form container */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    width: 50px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.questionnaire-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #e6e1f9 0%, #ffffff 100%);
+
+}
+/*linear-gradient(120deg, #c8e8e1 0%, #f5f7fa 100%)
+
+url("background2.jpeg")no-repeat center center; 
+    background-size: cover */
+
+
+
+.questionnaire-image-left,
+.questionnaire-image-right {
+    width: 150px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.questionnaire-form {
+    position: relative;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px !important;
+    width: 90% !important;
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+}
+
+.questionnaire-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.questionnaire-input,
+.questionnaire-textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.questionnaire-input:focus,
+.questionnaire-textarea:focus {
+    border-color: #7B1FA2;
+    box-shadow: 0 0 8px rgba(136, 0, 255, 0.297);
+}
+
+/*#006805*/
+.questionnaire-button {
+    background-color: #7B1FA2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.questionnaire-button:hover {
+    background-color: #3c0857;
+}

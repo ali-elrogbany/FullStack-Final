@@ -1,0 +1,84 @@
+.driver-dashboard {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #444;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.driver-details {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-history {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.transaction-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.transaction-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transaction-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styling */
+.update-btn {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adds some space between the button and the transaction data */
+}
+
+.update-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.update-btn:disabled {
+    background-color: #ccc; /* Grey background when disabled */
+    cursor: not-allowed; /* Show a not-allowed cursor when disabled */
+}

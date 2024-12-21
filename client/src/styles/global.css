@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}

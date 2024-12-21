@@ -1,0 +1,23 @@
+.feature-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #e6e1f9 0%, #ffffff 100%);
+}
+
+.feature-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+}

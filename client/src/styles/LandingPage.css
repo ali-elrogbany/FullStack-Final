@@ -1,0 +1,291 @@
+/* General Layout */
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: left;
+    background: linear-gradient(120deg, #e6e1f9 0%, #ffffff 100%);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.landing-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Image Styling */
+.landing-image {
+    width: 50%; /* Adjusted size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+}
+
+/* Text Content Styling */
+.text-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 600px; 
+}
+
+/* Other styles remain unchanged */
+
+.landing-header {
+    margin-bottom: 2rem;
+}
+
+.landing-title {
+    font-size: 2.5rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.landing-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Features Section */
+.landing-features {
+    margin: 2rem 0;
+}
+
+.features-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
+    margin: 0.5rem 0;
+}
+
+.feature-item a {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #dae3ed;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-item a:hover {
+    color: white;
+    background-color: #3b2f2f;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.feature-item a:active {
+    transform: translateY(1px);
+}
+
+/* Footer Section */
+.landing-footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #0056b3;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 2rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.reviews-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Review Box Styling */
+.reviews-box {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1.5rem; /* Add space between reviews */
+    padding-bottom: 10px;
+}
+
+.review-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    text-align: center;
+}
+
+.review-item p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.review-item span {
+    font-size: 1rem;
+    color: #777;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Keyframe Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+.landing-page {
+    display: flex;
+    flex-direction: column; /* Stacked in mobile view */
+    height: 100vh;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px; /* Add spacing between sections */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.features-and-image {
+    display: flex;
+    flex-direction: row; /* Place image and text side by side */
+    gap: 20px; /* Add spacing between image and features */
+    width: 100%;
+}
+
+.image-section {
+    flex: 1; /* Allocate equal space to the image */
+    text-align: center; /* Center align the image */
+}
+
+.landing-image {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 700px; 
+}
+
+.text-content {
+    flex: 2; /* Allocate more space to text content */
+}
+
+.landing-features {
+    margin-bottom: 50px; /* Add spacing below features section */
+}
+
+.faq-and-reviews {
+    display: flex;
+    flex-direction: row; /* Place FAQ and Reviews side by side */
+    gap: 40px; /* Increase spacing between FAQ and Reviews */
+    width: 100%;
+}
+
+.faq-section {
+    flex: 1; /* Allocate space to FAQ */
+    max-width: 300px; /* Optional: Limit FAQ section width */
+}
+
+.reviews-section {
+    flex: 2; /* Allocate more space to Reviews */
+    max-width: 600px; /* Make Reviews section wider */
+}
+
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-header {
+    background-color: #f4f4f4;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faq-header:hover {
+    background-color: #e9e9e9;
+}
+
+.faq-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .features-and-image {
+        flex-direction: column; /* Stack image and features vertically on mobile */
+    }
+
+    .image-section {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .faq-and-reviews {
+        flex-direction: column; /* Stack FAQ and Reviews vertically on mobile */
+    }
+
+    .faq-section,
+    .reviews-section {
+        width: 100%; /* Full width for FAQ and Reviews */
+    }
+
+    .landing-image {
+        max-width: 100%; /* Full width for image on mobile */
+    }
+}

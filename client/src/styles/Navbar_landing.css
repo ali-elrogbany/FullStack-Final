@@ -1,0 +1,41 @@
+/* Navbar.css */
+.navbar {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7B1FA2; /* Background color for the navbar */
+    padding: 10px 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navbar-menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.navbar-menu li a:hover {
+    background-color: #3c0857;
+    border-radius: 5px;
+}

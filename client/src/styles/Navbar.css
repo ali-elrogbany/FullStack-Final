@@ -1,0 +1,54 @@
+.navbar {
+    background-color: #7b1fa2;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 1.5rem;
+}
+
+.navbar-menu a,
+.logout-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border: none; /* For the logout button */
+    background-color: transparent; /* Makes the button blend with the navbar */
+}
+
+.navbar-menu a:hover,
+.logout-button:hover {
+    background-color: #3c0857;
+}
+
+.logout-button {
+    cursor: pointer; /* Show pointer cursor for the button */
+    background-color: transparent; /* Transparent background so it matches navbar links */
+    border: none; /* No border for the button */
+}
+
+.logout-button:hover {
+    background-color: #3c0857; /* Same hover effect as the links */
+}
